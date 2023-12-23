@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blackjack</title>
+    <style>
+        body{
+            background-color: rgba(23, 122, 5, 0.87);
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        p{
+            color: white;
+            font-size: larger;
+            margin-bottom: 7px;
+        }
+        button{
+            color: rgba(33, 168, 7, 0.87);
+            background-color: #cfd914;
+            border: 1px solid #cfd914;
+            border-radius: 10%;
+            font-size: large;
+            margin-right: 20px;
+            width: 170px;
+            height: 70px;
+        }
+        button:hover{
+            background-color: #c73636;
+            color: white;
+            border: 1px solid #c73636;
+        }
+        img{
+            width: 90px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #d1da13">BLACKJACK</h1>
+    <p id="greeting">Want to play a round?</p>
+    <p id="dealerCards">Dealer Cards:</p>
+    <img id="dCard1" src="" alt=""/>
+    <img id="dCard2" src="" alt=""/>
+    <img id="dCard3" src="" alt=""/>
+    <img id="dCard4" src="" alt=""/>
+    <img id="dCard5" src="" alt=""/>
+    <img id="dCard6" src="" alt=""/>
+    <p id="cards">Cards: </p>
+    <img id="pCard1" src="" alt=""/>
+    <img id="pCard2" src="" alt=""/>
+    <img id="pCard3" src="" alt=""/>
+    <img id="pCard4" src="" alt=""/>
+    <img id="pCard5" src="" alt=""/>
+    <img id="pCard6" src="" alt=""/>
+    <p id="dealerSum">Dealer Sum: ?</p>
+    <p id="sum">Sum: </p>
+    <p id="score">Total Score: Dealer [ ] - [ ] You</p>
+    <br>
+    <p id="cardLeft">Total 156 card left</p>
+    <br>
+    <button id="startButton" onclick="startGame()">START</button>
+    <button id="cardButton" onclick="yes()">YES</button>
+    <button id="no" onclick="no()">NO</button>
+    <button id="newRound" onclick="newRound()">NEW ROUND</button>
+    <button id="newGame" onclick="restartGame()">NEW GAME</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
